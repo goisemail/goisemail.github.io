@@ -23,23 +23,3 @@
     align-items: center;
     justify-content: center;
 }
-
-/* Adjust font size for screens smaller than 768px */
-@media (max-width: 768px) {
-    .myHeader {
-        font-size: 4dvh;
-    }
-    .mytag{
-        font-size: 2dvh;
-    }
-}
-
-/* Adjust font size for screens smaller than 480px */
-@media (max-width: 480px) {
-    .myHeader {
-        font-size: 2dvh;
-    }
-    .mytag{
-        font-size: 1dvh;
-    }
-}
