@@ -1,3 +1,45 @@
 .body {
     background-color: #1a1a1a;
+    position: relative;
+}
+
+.mytag{
+    font-family:'Times New Roman', Times, serif;
+    top: -10%;
+    left: 30%;
+    font-size: 4dvh;
+    margin-top: -8%;
+    margin-left: 50%;
+    color: #eef;
+
+}
+.myHeader {
+    top: 50%;
+    left: 20%;
+    position:absolute;
+    text-align: center; 
+    font-size: 6dvh;
+    color: #eec;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust font size for screens smaller than 768px */
+@media (max-width: 768px) {
+    .myHeader {
+        font-size: 4dvh;
+    }
+    .mytag{
+        font-size: 2dvh;
+    }
+}
+
+/* Adjust font size for screens smaller than 480px */
+@media (max-width: 480px) {
+    .myHeader {
+        font-size: 2dvh;
+    }
+    .mytag{
+        font-size: 1dvh;
+    }
 }
