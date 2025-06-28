@@ -23,33 +23,36 @@
       flex-direction: column;
     }
 
+    /* Navigation Bar */
     .nav-bar {
-      flex: 0 0 10%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       background-color: #1a1a1a;
-      font-size: 0.95rem;
-
+      padding: 16px 24px;
+      flex-wrap: wrap;
     }
 
-.nav-bar a {
-  color: #eec;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
+    .nav-bar a {
+      color: #eec;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
 
     .nav-bar a:hover {
       text-decoration: underline;
     }
 
+    /* Home Section */
     .home-section {
-      flex: 1 0 80%;
+      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 30px 15px;
     }
 
     .name-title {
@@ -64,8 +67,8 @@
       margin-top: 5px;
     }
 
+    /* Footer */
     footer {
-      flex: 0 0 10%;
       background-color: #1a1a1a;
       padding: 10px 0;
       text-align: center;
@@ -79,6 +82,7 @@
       text-decoration: none;
     }
 
+    /* Media Queries */
     @media (min-width: 768px) {
       .name-title {
         font-size: 3.5rem;
@@ -87,15 +91,31 @@
         font-size: 1.5rem;
       }
     }
+
+    @media (max-width: 767.98px) {
+      .nav-bar {
+        padding: 8px 12px;
+      }
+
+      .nav-bar a {
+        font-size: 0.8rem;
+        margin: 0 8px;
+      }
+
+      footer {
+        padding: 8px 0;
+        font-size: 0.75rem;
+      }
+    }
   </style>
 </head>
 <body>
 
 <!-- Nav Bar -->
-<div class="nav-bar d-flex justify-content-end align-items-center px-4">
+<div class="nav-bar">
   <a href="#about">About Me</a>
-  <a href="#projects" class="ms-4">Projects</a>
-  <a href="#contact" class="ms-4">Contact</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
 </div>
 
 <!-- Home Section -->
@@ -109,10 +129,12 @@
 <!-- Footer -->
 <footer>
   <p>© 2025 Mohamed Ismail M</p>
-<!--  <div class="footer-icons mt-2">-->
-<!--    <a href="https://www.linkedin.com/in/goisemail/" target="_blank"><i class="bi bi-linkedin"></i></a>-->
-<!--    <a href="https://github.com/goisemail" target="_blank"><i class="bi bi-github"></i></a>-->
-<!--  </div>-->
+  <!-- Optional Social Icons
+  <div class="footer-icons mt-2">
+    <a href="https://www.linkedin.com/in/goisemail/" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/goisemail" target="_blank"><i class="bi bi-github"></i></a>
+  </div>
+  -->
 </footer>
 
 <!-- Bootstrap JS -->
