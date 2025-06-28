@@ -23,6 +23,18 @@
     .name-title {
       color: #eec;
     }
+    .tagline {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.2rem;
+      color: #eef;
+      text-align: right;
+      margin-top: 5px;
+    }
+    @media (min-width: 768px) {
+      .tagline {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -31,8 +43,10 @@
     <!-- Name -->
     <h1 class="display-3 fw-bold name-title">Mohamed Ismail M</h1>
 
-    <!-- Title -->
-    <p class="lead mt-3">Distinguish Software Engineer</p>
+    <!-- Tagline aligned right to name -->
+    <div class="d-flex justify-content-end">
+      <div class="tagline">Distinguish Software Engineer</div>
+    </div>
   </div>
 
   <!-- Bootstrap JS (optional) -->
