@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>More Projects - Mohamed Ismail M</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- Nav Bar (same as above) -->
+<div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+
+    <div class="dropdown ms-4">
+        <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #eec;">
+            Projects
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/goisemail/project1" target="_blank">Project 1</a></li>
+            <li><a class="dropdown-item" href="https://github.com/goisemail/project2" target="_blank">Project 2</a></li>
+            <li><a class="dropdown-item" href="https://github.com/goisemail/project3" target="_blank">Project 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="projects.html">More…</a></li>
+        </ul>
+    </div>
+
+    <a href="#contact" class="ms-4">Contact</a>
+</div>
+
+<!-- Contact Body -->
+<div class="contact-section">
+    <div class="container py-5">
+        <h2 class="mb-4" style="color:#eec;">Contact Me</h2>
+
+        <form id="contactForm" class="contact-form mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="name" class="form-label" style="color: #eef;">Name</label>
+                <input type="text" class="form-control bg-dark text-light border-secondary" id="name" name="name" placeholder="Your Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label" style="color: #eef;">Email</label>
+                <input type="email" class="form-control bg-dark text-light border-secondary" id="email"  name="email" placeholder="you@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label" style="color: #eef;">Phone</label>
+                <input type="tel" class="form-control bg-dark text-light border-secondary" id="phone" name="phone" placeholder="+91 98765 43210">
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label" style="color: #eef;">Message</label>
+                <textarea class="form-control bg-dark text-light border-secondary" id="message" rows="4" name="message" placeholder="Your message here..."></textarea>
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-download">Send Message</button>
+            </div>
+        </form>
+        <!-- Message display container -->
+        <div id="formMessage" class="mt-4 text-success fw-bold" style="display: none;"></div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Mohamed Ismail M</p>
+    <!-- Optional Social Icons -->
+    <!--    <div class="footer-icons mt-2">-->
+    <!--      <a href="https://www.linkedin.com/in/goisemail/" target="_blank"><i class="bi bi-linkedin"></i></a>-->
+    <!--      <a href="https://github.com/goisemail" target="_blank"><i class="bi bi-github"></i></a>-->
+    <!--    </div>-->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

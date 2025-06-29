@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  color: #eef;
+  margin: 0;
+}
+
+.contact-section {
+  flex: 1;  /* fills available vertical space */
+}
+
+/* Contact Form Container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+/* Form Labels */
+.contact-form .form-label {
+  color: #eef;
+}
+
+/* Form Controls */
+.contact-form .form-control {
+  background-color: #1f1f1f;
+  color: #eef;
+  border: 1px solid #555;
+}
+
+/* Form Controls Focus State */
+.contact-form .form-control:focus {
+  background-color: #1f1f1f;
+  color: #eef;
+  border-color: #eec;
+  box-shadow: none;
+}
+
+/* Send Message Button (styled like .btn-download in style.css) */
+.btn-send {
+  background-color: #eec;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn-send:hover {
+  background-color: #fff;
+}
+
+/* Optional: add some spacing if needed for mobile */
+@media (max-width: 767.98px) {
+  .contact-form {
+    padding: 20px 12px;
+  }
+
+  .btn-send {
+    width: 100%;
+    text-align: center;
+  }
+}
