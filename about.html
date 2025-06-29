@@ -29,9 +29,25 @@
 <div class="nav-bar">
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+
+    <div class="dropdown ms-4">
+        <a class="dropdown-toggle text-decoration-none fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #eec;">
+            Projects
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="https://github.com/goisemail/project1" target="_blank">Project 1</a></li>
+            <li><a class="dropdown-item" href="https://github.com/goisemail/project2" target="_blank">Project 2</a></li>
+            <li><a class="dropdown-item" href="https://github.com/goisemail/project3" target="_blank">Project 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="projects.html">More…</a></li>
+        </ul>
+    </div>
+
+    <a href="#contact" class="ms-4">Contact</a>
 </div>
+
+<div id="navbar"></div>
+
 
 <!-- About Section -->
 <div class="about-section container">
@@ -45,7 +61,7 @@
         <div class="col-md-8 about-text">
             <h2>About Me</h2>
             <p class="mt-3" style="font-size:1.05rem;">
-                I'm Mohamed Ismail M, a passionate Software Engineer specializing in scalable enterprise-grade systems with Java, Spring Boot, and cloud-native platforms.
+                I'm Mohamed Ismail M, a passionate polygot Software Engineer specializing in scalable enterprise-grade systems with Java, and cloud-native platforms.
             </p>
             <p style="font-size:1.05rem;">
                 Beyond coding, I explore AI prototyping, mentor developers, and love brewing startup ideas over coffee.
