@@ -9,7 +9,7 @@
 }
 
 .project-tile {
-  height: 70vh;
+  height: 85vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
