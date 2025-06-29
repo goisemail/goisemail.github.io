@@ -24,7 +24,6 @@
       color: #eec;
       text-decoration: none;
       margin: 0 20px;
-      font-weight: bold;
       font-size: 1rem;
     }
 
@@ -117,6 +116,35 @@
       text-decoration: none;
     }
 
+
+/* Make dropdown background same as nav-bar */
+.dropdown-menu {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Dropdown item text color and hover */
+.dropdown-menu .dropdown-item {
+  color: #eec;
+  padding: 10px 16px;
+  font-size: 1rem;
+}
+
+/* Hover color to match your theme */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Divider line inside dropdown */
+.dropdown-divider {
+  border-color: #444;
+}
+
+
     /* Media Queries */
     @media (min-width: 768px) {
       .name-title {
@@ -128,6 +156,12 @@
     }
 
     @media (max-width: 767.98px) {
+
+          .dropdown-menu .dropdown-item {
+            padding: 5px 8px;
+            font-size: 0.75rem;
+          }
+
         .about-section {
              flex-direction: column;
              text-align: center;
@@ -151,9 +185,21 @@
         padding: 8px 0;
         font-size: 0.75rem;
       }
+
+
+
       
       
     }
+
+
+
+
+
+
+
+
+
 
 
     
