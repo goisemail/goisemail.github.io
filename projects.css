@@ -1,0 +1,54 @@
+
+
+.project-slider {
+  flex: 1;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  margin-top: 10vh;
+  height: 80vh;
+}
+
+.project-tile {
+  height: 70vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.project-tile .card {
+  background-color: #222;
+  color: #eef;
+  border: none;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.project-tile img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.project-tile h2 {
+  color: #eec;
+  margin-bottom: 16px;
+}
+
+.project-tile p {
+  font-size: 1.05rem;
+}
+
+.project-tile a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #eec;
+  text-decoration: underline;
+}

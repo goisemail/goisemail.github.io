@@ -12,12 +12,17 @@
 
     /* Navigation Bar */
     .nav-bar {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      background-color: #1a1a1a;
-      padding: 16px 24px;
-      flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 0 24px;
+  z-index: 999;
     }
 
     .nav-bar a {
@@ -192,6 +197,8 @@
       
       
     }
+
+
 
 
 
